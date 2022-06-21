@@ -1,0 +1,80 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "RetWare", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+OrionLib:MakeNotification({
+	Name = "Thanks for using my script",
+	Content = "W script hub hahahaha thanks for using niggaaaaaa",
+	Image = "rbxassetid://",
+	Time = 5
+})
+local Main = Window:MakeTab({
+	Name = "Aimlock shit",
+	Icon = "rbxassetid://6031265971",
+	PremiumOnly = false
+})
+Main:AddButton({
+	Name = "Fake ass limited Client only press v to close",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxHackerProLuaStuff/avatar-editor-thing/main/headless.lua"))()
+  	end    
+})
+local Section = Main:AddSection({
+	Name = "Aimlock op lol"
+})
+Main:AddButton({
+	Name = "Flash lock op Keybind E",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/imnoobgamingyt76/Silent-aim/main/shit"))()
+  	end    
+})
+Main:AddButton({
+	Name = "streamable lock need silent aim script",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/imnoobgamingyt76/streamable-lock/main/Esex"))()
+  	end    
+})
+Main:AddButton({
+	Name = "The ware lock",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/imnoobgamingyt76/theware/main/ware"))()
+  	end    
+})
+local animation = Window:MakeTab({
+	Name = "Animation shit",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+animation:AddButton({
+	Name = "Animation script loop",
+	Callback = function()
+        _G.Loop = true --true if enable loop false if disable the loop
+        coroutine.wrap(function()
+        while _G.Loop do wait(1)
+        coroutine.wrap(function()
+        while _G.Loop do wait(1)
+        local Animate = game.Players.LocalPlayer.Character.Animate
+        Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616163682"
+        Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1083218792"
+        end
+        end)()
+        end
+        end)()
+  	end    
+})
+animation:AddButton({
+	Name = "Disable animation script disable loop",
+	Callback = function()
+        _G.Loop = false --true if enable loop false if disable the loop
+        coroutine.wrap(function()
+        while _G.Loop do wait(1)
+        coroutine.wrap(function()
+        while _G.Loop do wait(1)
+        local Animate = game.Players.LocalPlayer.Character.Animate
+        Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616163682"
+        Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1083218792"
+        end
+        end)()
+        end
+        end)()
+  	end    
+})
